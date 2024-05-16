@@ -1,0 +1,9 @@
+node_modules
+cypress/videos
+cypress/screenshots
+mochawesome-report
+cypress/results
+mochawesome.json
+cypress.env.json
+sitecore_boat.xml
+Report*
