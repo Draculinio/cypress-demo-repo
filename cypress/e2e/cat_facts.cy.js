@@ -2,7 +2,7 @@ describe('Cat Facts API', ()=>{
     it('Verify schema validator', ()=>{
         cy.request({
             method:'GET',
-            'url':'https://catfact.ninja/fact',
+            'url': Cypress.env('cat_facts_url'),
             headers: {},
             failOnStatusCode: false,
         }).then(response=>{
@@ -16,7 +16,7 @@ describe('Cat Facts API', ()=>{
     it('verify length field', ()=>{
         cy.request({
             method:'GET',
-            'url':'https://catfact.ninja/fact',
+            'url':Cypress.env('cat_facts_url'),
             headers: {},
             failOnStatusCode: false,
         }).then(response=>{
